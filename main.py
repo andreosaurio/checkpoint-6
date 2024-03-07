@@ -5,5 +5,5 @@ class User:
 
 user1 = User("Andreosaurio", "my_pwd")
 
-print("Username:", user1.username)
-print("Password:", user1.password)
+print(user1.username)
+print(user1.password)
