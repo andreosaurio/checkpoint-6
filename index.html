@@ -11,205 +11,205 @@
     </style>
     </head>
     <body>
-        <p><span style='font-family: "Times New Roman", Times, serif; font-size: 22px; color: 3076BD;'><strong>&iquest;Para qu&eacute; usamos clases en Python?</strong></span></p>
-        <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>Las clases en Python son una herramienta para crear objetos que pueden contener atributos y m&eacute;todos, es decir, unas caracter&iacute;sticas y unos comportamientos espec&iacute;ficos. Las clases nos permiten agrupar datos y m&eacute;todos relacionados, facilitando la organizaci&oacute;n y la reutilizaci&oacute;n del c&oacute;digo.&nbsp;</span></p>
-        <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>Para crear una clase usamos la palabra reservada&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>. La convenciones de nomenclatura de Python conocidas como PEP 8 recomiendan el uso de CamelCase para nombrar clases. Adem&aacute;s, es conveniente elegir nombres que sean descriptivos tanto para las clases como para los atributos.</span></p>
-        <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><strong>Ejemplo:</strong></span></p>
-        <p><span style="font-family: Georgia, serif; font-size: 16px;"><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Invoice:</span></span><br><span style="font-size: 14px; background-color: rgb(209, 213, 216);">&nbsp; &nbsp; def greeting(self):</span><br><span style="font-size: 14px; background-color: rgb(209, 213, 216);">&nbsp; &nbsp; &nbsp; &nbsp; return &apos;Hi there&apos;</span><br><span style="font-size: 14px; background-color: rgb(209, 213, 216);">inv_one = Invoice()</span><br><span style="font-size: 14px; background-color: rgb(209, 213, 216);">print(inv_one.greeting())</span></p>
-        <p><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>En el anterior ejemplo la clase&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><strong>Invoice</strong></span></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;tiene un metodo llamado&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">greeting</span></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>&nbsp;</strong>que devuelve el string <strong>Hi there</strong>. El par&aacute;metro&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>self</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;se usa para referirse a la instancia de la clase. Es necesario incluir &apos;self&apos; como primer par&aacute;metro en cada m&eacute;todo de clase.<br>Desp&uacute;es de definir la clase, se crea una instancia de &eacute;sta llamada&nbsp;</span><span style='color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-family: "Times New Roman", Times, serif; font-size: 16px;'><strong>inv_one</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>.&nbsp;<br>Por &uacute;ltimo, se llama al m&eacute;todo&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>greeting()</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;de la instancia inv_one y se imprime el resultado.</span></p>
-        <p>Sin embargo, el ejemplo anterior es la forma m&aacute;s simple y no ser&iacute;a verdaderamente &uacute;til en cuanto a utilizaci&oacute;n en una aplicaci&oacute;n real. Para comprender las clases es necesario entender a su vez la funci&oacute;n especial __init__(), tambi&eacute;n conocida como dunder init. Esta funci&oacute;n reservada es el constructor y se ejecuta autom&aacute;ticamente cuando la clase se instancia. Lo veremos m&aacute;s adelante.<br><br>Otros subtemas de inter&eacute;s relacionados con las clases son otros m&eacute;todos <a href="https://www.w3schools.com/python/python_iterators.asp">dunder</a>, el encapsulamiento, la <a href="https://www.w3schools.com/python/python_inheritance.asp">herencia</a> o el <a href="https://www.w3schools.com/python/python_polymorphism.asp">polimorfismo</a>.</p>
-        <p><span style="font-size: 16px;"><strong>Ejercicio recomendado</strong><strong>:</strong></span></p>
-        <p><span style="font-size: 16px;">Crea una clase llamada &apos;Animal&apos; que tenga los siguientes atributos:&nbsp;nombre, especie, color. Adem&aacute;s, la clase animal tiene que tener n m&eacute;todo llamado &apos;informaci&oacute;n()&apos; que imprima en la consola la informaci&oacute;n del animal en el siguiente formato:</span><br><span style="font-size: 16px;">Nombre: [nombre del animal]</span><br><span style="font-size: 16px;">Especie: [especie del animal]</span><br><span style="font-size: 16px;">Color: [color del animal]</span><br><span style="font-size: 16px;">Despu&eacute;s, crea al menos dos instancias de la clase &apos;Animal&apos; con diferentes atributos y llama al m&eacute;todo &apos;informaci&oacute;n()&apos;.</span></p>
-        <p><br></p>
-        <p><strong>Enlaces de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a href="https://docs.python.org/3/tutorial/classes.html">docs.python.org/3/tutorial/classes.html</a></li>
-            <li><a href="https://www.w3schools.com/python/python_classes.asp">w3schools.com/python/python_classes.asp</a></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><strong><span style="font-size: 20px;"><br></span><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; m&eacute;todo se ejecuta autom&aacute;ticamente cuando se crea una instancia de una clase?</span></strong></p>
-        <p>El m&eacute;todo que se ejecuta autom&aacute;ticamente cuando se crea una instancia de una clase se llama <span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>__init__</span>. Este m&eacute;todo se encarga de inicializar los atributos de la instancia.&nbsp;</p>
-        <p><strong>Ejemplo:</strong></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Persona:<br>&nbsp; &nbsp; def __init__(self, nombre, apellido):<br>&nbsp; &nbsp; &nbsp; &nbsp; self.nombre = nombre<br>&nbsp; &nbsp; &nbsp; &nbsp; self.apellido = apellido<br><br>persona1 = Persona(&apos;Andrea&apos;, &apos;Fern&aacute;ndez&apos;)<br><br>print(persona1.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(255, 255, 255);'>&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(209, 213, 216);'># Salida : Andrea</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'><br>print(persona1.apellido)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(255, 255, 255);'>&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(209, 213, 216); background-color: rgb(255, 255, 255);'># Salida: Fern&aacute;ndez</span></p>
-        <p>En la primera l&iacute;nea se define la clase <strong>Persona</strong>.&nbsp;</p>
-        <p>Despu&eacute;s se define el constructor a trav&eacute;s del m&eacute;todo<strong>&nbsp;__init__.</strong> Este m&eacute;todo se va a ejecutar autom&aacute;ticamente cada vez que se cree una nueva instancia de la clase <strong>Persona</strong>. Toma tres par&aacute;metros:</p>
-        <ul>
-            <li><strong>self</strong>: es necesario en todos los m&eacute;todos de clase Python y hace referencia a la instancia de la clase.</li>
-            <li><strong>nombre</strong> y <strong>apellido</strong>: son los atributos que se inicializar&aacute;n para cada instancia de la clase.</li>
-        </ul>
-        <p>En la siguiente l&iacute;nea se crea una nueva instancia de la clase <strong>Persona</strong> llamada <strong>persona1</strong>. As&iacute; es como se llama autom&aacute;ticamente al m&eacute;todo <strong>__init__&nbsp;</strong>para inicializar los atributos <strong>nombre</strong> y <strong>apellido</strong> con los valores proporcionados <em>Andrea</em> y <em>Fern&aacute;ndez.&nbsp;</em><br>Despu&eacute;s se imprimen los valores de los atributos.<br><br><strong><span style="font-size: 16px;">Ejercicio recomendado</span></strong>:<br><br>Crea una clase llamada <strong>Animal</strong> que tenga dos atributos: <strong>nombre</strong> y <strong>especie</strong>. La clase debe tener un m&eacute;todo especial <strong>__init__&nbsp;</strong>que reciba como par&aacute;metros nombre y especie para inicializar los atributos de cada instancia. Luego, crea una instancia de la clase Animal con el nombre <em>Firulais</em> y la especie <em>Gato</em>. Imprime el nombre y la especie del animal creado.</p>
-        <p><br></p>
-        <p><strong>Enlace de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a href="https://www.w3schools.com/python/gloss_python_class_init.asp">w3schools.com/python/gloss_python_class_init.asp</a></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><br><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Cu&aacute;les son los tres verbos de API?</span></strong></p>
-        <p>Los verbos de API son instrucciones estandarizadas que indican la acci&oacute;n que una aplicaci&oacute;n quiere realizar sobre un recurso en otra aplicaci&oacute;n. Estos verbos se utilizan en APIs Rest, que son el tipo de API m&aacute;s com&uacute;n en la actualidad.</p>
-        <p>Los tres verbos principales de API son:</p>
-        <ul>
-            <li>GET: Obtener datos de un servidor.</li>
-            <li>POST: Enviar datos nuevos al servidor.</li>
-            <li>PUT / PATCH: Para actualizar los datos existentes en el servidor.&nbsp;</li>
-        </ul>
-        <p>Adem&aacute;s de estos verbos b&aacute;sicos, tambi&eacute;n se pueden usar otros verbos adicionales para acciones espec&iacute;ficas, como:</p>
-        <ul>
-            <li>DELETE: Se utiliza para eliminar datos.</li>
-            <li>HEAD: Para obtener solamente los encabezados en un servidor, sin el cuerpo completo.&nbsp;</li>
-        </ul>
-        <p>Hay que ser especialmente precavido al utilizar verbos como PUT o DELETE, ya que pueden modificar o eliminar datos de forma permanente.&nbsp;</p>
-        <p><br></p>
-        <p><strong>Enlace de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a href="https://www.restapitutorial.com/lessons/httpmethods.html">restapitutorial.com/lessons/httpmethods.html</a></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><span style="font-size: 22px; color: 3076BD;"><strong>&iquest;Es MongoDB una base de datos SQL o NoSQL?</strong></span><br><br><span style="font-size: 16px;">MongoDB es una base de datos NoSQL clasificada de tipo Documental, ya que sus datos se almacenan en documentos JSON.</span></p>
-        <p><span style="font-size: 16px;">Las caracter&iacute;sticas principales de las bases de datos NoSQL son:</span></p>
-        <ul>
-            <li>No relacionales: No se basan en tablas y relaciones.</li>
-            <li>No estructuradas: Los datos pueden tener diferentes formatos.</li>
-            <li>Consultas espec&iacute;ficas: Cada tipo de base de datos NoSQL tiene su propio lenguaje de consulta.</li>
-        </ul>
-        <p>Las ventajas de utilizar MongoDB son las siguientes:</p>
-        <ul>
-            <li>Flexibilidad: Almacena datos en documentos JSON, que son flexibles y f&aacute;ciles de modificar.</li>
-            <li>Escalabilidad: Puede escalar horizontalmente para manejar grandes cantidades de datos.</li>
-            <li>Rendimiento: Es una base de datos r&aacute;pida y eficiente.</li>
-        </ul>
-        <p><br></p>
-        <p><strong>Enlaces de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a href="https://www.mongodb.com/nosql-explained/nosql-vs-sql">mongodb.com/nosql-explained/nosql-vs-sql</a></li>
-            <li><a href="https://www.mongodb.com/es/what-is-mongodb">mongodb.com/es/what-is-mongodb</a></li>
-        </ul>
-        <p><br></p>
-        <p><br></p>
-        <hr>
-        <p><br></p>
-        <p><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; es una API?</span></strong><br><br><span style="font-size: 16px;">API significa Interfaz de Programaci&oacute;n de APlicaciones (en ingl&eacute;s, Application Programming Interface). Es un conjunto de reglas y definiciones que permiten que dos aplicaciones se comuniquen entre s&iacute;.</span></p>
-        <p><span style="font-size: 16px;">Las APIs se utilizan para:</span></p>
-        <ul>
-            <li><span style="font-size: 16px;">Obtener datos: Por ejemplo, una aplicaci&oacute;n de noticias podr&iacute;a usar una API para obtener datos sobre los &uacute;ltimos art&iacute;culos.</span></li>
-            <li><span style="font-size: 16px;">Enviar datos: Una app como Instagram utilizar&iacute;a una API para enviar las publicaciones de los usuarios.</span></li>
-            <li><span style="font-size: 16px;">Controlar dispositivos: Una aplicaci&oacute;n de dom&oacute;tica podr&iacute;a usar una API para subir o bajar las persianas.</span></li>
-        </ul>
-        <p><span style="font-size: 16px;">Tipos de APIs:</span></p>
-        <ul>
-            <li><span style="font-size: 16px;">API REST: Es el tipo de API m&aacute;s com&uacute;n. Se basa en el uso de verbos HTTP (GET, POST, PUT, DELETE) para realizar las acciones sobre los recursos.</span></li>
-            <li><span style="font-size: 16px;">API SOAP: Es la m&aacute;s antigua, utilizando XML para definir los mensajes que se intercambian las aplicaciones.</span></li>
-            <li><span style="font-size: 16px;">API GraphQL: Es la m&aacute;s reciente, permite que los clientes soliciten datos de forma espec&iacute;fica y flexible.</span></li>
-        </ul>
-        <p>Las APIs se utilizan en una gran variedad de aplicaciones, como aplicaciones web, aplicaciones m&oacute;viles, juegos y software empresarial.&nbsp;</p>
-        <p>Algunos ejemplos de APIs son:</p>
-        <ul>
-            <li>Google Maps API: permite obtener informaci&oacute;n sobre mapas, direcciones y lugares.</li>
-            <li>Twitter API: permite obtener informaci&oacute;n sobre tweets, usuarios y hastags.</li>
-            <li>Facebook API: permite obtener informaci&oacute;n sobre usuarios, publicaciones y eventos.</li>
-        </ul>
-        <p>Otros temas de inter&eacute;s en relaci&oacute;n con las API son la arquitectura de software, la integraci&oacute;n de aplicaciones y el dise&ntilde;o de APIs.</p>
-        <p><strong>Ejercicio sugerido:</strong></p>
-        <p>Elige una de las tres APIs mencionadas arriba (Facebook, Twitter, Google Maps) y revisa su documentaci&oacute;n. Despu&eacute;s trata de escribir un script que use la API para obtener informaci&oacute;n o realizar alguna acci&oacute;n.</p>
-        <p><br></p>
-        <p><span style="font-size: 16px;"><strong>Enlaces de inter&eacute;s:</strong></span></p>
-        <ul>
-            <li><a href="https://www.w3schools.com/js/js_api_intro.asp">w3schools.com/js/js_api_intro.asp</a></li>
-            <li><span style="font-size: 16px;"><a href="https://docs.github.com/es/rest?apiVersion=2022-11-28">docs.github.com/es/rest?apiVersion=2022-11-28</a></span></li>
-            <li><span style="font-size: 16px;"><a href="https://www.restapitutorial.com/lessons/httpmethods.html">restapitutorial.com/lessons/httpmethods.html</a></span></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; es Postman?</span></strong></p>
-        <p><span style="font-size: 16px;">Postman es una herramienta de colaboraci&oacute;n para el desarrollo de APIs. Postman proporciona una interfaz gr&aacute;fica de usuario que permite lo siguiente:</span></p>
-        <ul>
-            <li><span style="font-size: 16px;">Enviar solicitudes a APIs: se puede probar diferentes verbos HTTP, encabezados y cuerpos de solicitud.</span></li>
-            <li><span style="font-size: 16px;">Recibir y analizar respuestas de la API: se puede ver el c&oacute;digo de estado, los encabezados y el cuerpo de la respuesta.</span></li>
-            <li><span style="font-size: 16px;">Documentar APIs: se pueden crear y compartir colecciones de solicitudes y respuestas.</span></li>
-            <li><span style="font-size: 16px;">Colaborar en equipo: puedes trabajar con otros en las mismas colecciones de API.</span></li>
-        </ul>
-        <p><span style="font-size: 16px;">Postman es ampliamente utilizado en el desarrollo de software para probar y depurar APIs antes de integrarlas en aplicaciones m&aacute;s grandes. Por lo tanto, es una herramienta &uacute;til para desarrolladores.&nbsp;</span></p>
-        <p><strong><br>Ejercicio sugerido:</strong></p>
-        <p>Utiliza Postman para realizar solicitudes HTTP como GET, PUT, POST, DELETE a un servidor y observar las respuestas recibidas.</p>
-        <p><br></p>
-        <p><strong>Enlaces de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a href="https://www.postman.com/">postman.com</a></li>
-            <li><a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">Video-tutorial Postman</a></li>
-            <li><a href="https://learning.postman.com/docs/">learning.postman.com/docs</a></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><br></p>
-        <p><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; es el polimorfismo?</span></strong></p>
-        <p>El polimorfismo es un concepto de la programaci&oacute;n orientada a objetos que permite que diferentes objetos respondan al mismo mensaje de diferentes maneras. Dicho de otra manera, dos objetos de diferentes clases pueden tener m&eacute;todos con el mismo nombre, y los dos pueden ser llamados con el mismo c&oacute;digo, dando respuestas diferentes.</p>
-        <p>En Python el polimorfismo se puede lograr de dos formas:</p>
-        <ul>
-            <li>Polimorfismo de inclusi&oacute;n: basado en la herencia.</li>
-            <li>Polimorfismo de sobrecarga: basado en la definici&oacute;n de diferentes m&eacute;todos con el mismo nombre pero con diferentes par&aacute;metros.</li>
-        </ul>
-        <p>Los beneficios de utilizar el polimorfismo son:</p>
-        <ul>
-            <li>Flexibilidad: permite escribir c&oacute;digo m&aacute;s flexible y reutilizable.</li>
-            <li>Extensibilidad: facilita la creaci&oacute;n de nuevas clases que heredan de clases existentes.</li>
-            <li>Mantenimiento: hace que el c&oacute;digo sea m&aacute;s f&aacute;cil de mantener y actualizar.</li>
-        </ul>
-        <p><strong>Ejemplo:</strong></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Animal:<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; raise NotImplementedError<br><br>class Perro(Animal):<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return &apos;Guau!&apos;<br><br>class Gato(Animal):<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; return &apos;Miau!&apos;<br><br>perro = Perro()<br>gato = Gato()<br><br>print(perro.hablar())</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp;# Salida: Guau!</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'><br>print(gato.hablar())</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp;# Salida: Miau!</span></p>
-        <p>En este ejemplo el polimorfismo se representa mediante la capacidad de los objetos de las clases <strong>Perro</strong> y&nbsp;<strong>Gato</strong> de comportarse de manera similar aunque sean de diferentes tipos, permitiendo escribir c&oacute;digo gen&eacute;rico.<br>La clase <strong>Animal</strong> define un m&eacute;todo <strong>hablar()&nbsp;</strong>que levanta la excepci&oacute;n <strong>NotImplementedError</strong>,<strong>&nbsp;</strong>sirviendo de interfaz gen&eacute;rica que especifica que cualquier subclase debe implementar su propio m&eacute;todo&nbsp;<strong>hablar()</strong>. As&iacute; pues, las clases Perro y Gato sobreescriben el m&eacute;todo hablar con sus propias implementaciones.<br>Al crear una instancia de Perro y Gato y se llama al m&eacute;todo hablar() en cada una de ellas, el resultado es diferente para cada objeto, pero el c&oacute;digo que realizada la llamada es el mismo. Esto demuestra que los objetos de diferentes tipos pueden ser tratados de manera uniforme a trav&eacute;s de la herencia y el polimorfismo en Python.</p>
-        <p>Ser&iacute;a interesante buscar informaci&oacute;n sobre temas relacionados como la herencia y las clases abstractas.</p>
-        <p><strong>Ejercicio sugerido:</strong><br><br>Crea una funci&oacute;n &apos;&aacute;rea&apos; que pueda calcular el &aacute;rea de diferentes formas geom&eacute;tricas como cuadrado y c&iacute;rculo, utilizando el polimorfismo.</p>
-        <p><br></p>
-        <p>Enlaces de inter&eacute;s:</p>
-        <ul>
-            <li><a href="https://www.w3schools.com/python/python_polymorphism.asp">w3schools.com/python/python_polymorphism.asp</a></li>
-            <li><a href="https://www.w3schools.com/python/python_inheritance.asp">w3schools.com/python/python_inheritance.asp</a></li>
-            <li><a href="https://www.geeksforgeeks.org/abstract-classes-in-python/">geeksforgeeks.org/abstract-classes-in-python</a></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; es un m&eacute;todo dunder?</span></strong></p>
-        <p><span style="font-size: 16px;">Un m&eacute;todo dunder (double underscore), tambi&eacute;n conocido como m&eacute;todo m&aacute;gico o especial, son m&eacute;todos predefinidos que comienzan y terminan con dos guiones bajos (_ _). Estos m&eacute;todos se utilizan para implementar funcionalidades especiales en las clases.</span></p>
-        <p><span style="font-size: 16px;">Algunos ejemplos de m&eacute;todos dunder:</span></p>
-        <ul>
-            <li><span style="font-size: 16px;"><strong>__init__</strong>: se llama al crear una nueva instancia de una clase. Tambi&eacute;n conocido como m&eacute;todo constructor.</span></li>
-            <li><span style="font-size: 16px;"><strong>__str__</strong>: se utiliza para definir c&oacute;mo se debe representar la instancia de la clase como una cadena de caracteres (string). Sobre todo se utiliza para debugging.</span></li>
-            <li><span style="font-size: 16px;"><strong>__repr__</strong>: es miuy similar al anterior, pero se usa para definir una representaci&oacute;n sin ambig&uuml;edades, siendo &uacute;til al inspeccionar objetos para los desarrolladores.</span></li>
-            <li><span style="font-size: 16px;"><strong>__iter__</strong>: se llama para obtener un iterador de un objeto. Un iterador es un objeto que permite recorrer una secuencia de valores uno por uno.</span></li>
-            <li><span style="font-size: 16px;"><strong>__next__</strong>: se llama en un interador para obtener el siguiente valor de la secuencia. Al llegar al final de la secuencia se lanza la excepci&oacute;n StopIteration.</span></li>
-            <li><span style="font-size: 16px;"><strong>__len__</strong>: se llama para obtener la longitud de una secuencia.</span></li>
-            <li><span style="font-size: 16px;"><strong>__add__</strong>: se llama para sumar dos objetos.</span></li>
-        </ul>
-        <p><span style="font-size: 16px;"><strong>Ejemplo:</strong></span></p>
-        <p><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>class&nbsp;MiClase:</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__init__(self, lista):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; self.lista = lista</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__iter__(self):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; return iter(self.lista)</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__next__(self):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; if not self.lista:</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise StopIteration</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; return self.lista.pop(0)</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>obj = MiClase([1, 2, 3])</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>for i in obj: &nbsp; &nbsp;</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>print(i)</span><span style='text-align: start; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp;# Salida: 1, 2, 3</span></p>
-        <p>En este c&oacute;digo se crea una instancia de <strong>MiClase&nbsp;</strong>con una lista <strong>[1, 2, 3]</strong>. Despu&eacute;s se itera sobre esta instancia utilizando un bucle <strong>for</strong>. En cada iteraci&oacute;n se llama al m&eacute;todo <strong>__next__</strong> de <strong>MiClase</strong> para obtener el siguiente elemento del iterador, que es uno de los elementos de la lista. El resultado es que se imprime cada elemento de la lista en orden y uno por uno.</p>
-        <p><br></p>
-        <p><span style="font-size: 16px;"><strong>Enlace de inter&eacute;s:</strong></span></p>
-        <ul>
-            <li><span style="font-size: 16px;"><a data-fr-linked="true" href="https://www.geeksforgeeks.org/dunder-magic-methods-python/">geeksforgeeks.org/dunder-magic-methods-python/</a><br></span></li>
-        </ul>
-        <hr>
-        <p><br></p>
-        <p><strong><span style="font-size: 22px; color: 3076BD;">&iquest;Qu&eacute; es un decorador de Python?</span></strong></p>
-        <p><span style="font-size: 16px;">Un decorador de Python es una funci&oacute;n que recibe otra funci&oacute;n como par&aacute;metro y devuelve otra funci&oacute;n. Se utilizan para modificar el comportamiento de una funci&oacute;n sin tener que modificarla directamente.</span><br><br><span style="font-size: 16px;">Los decoradores son &uacute;tiles para reutilizar c&oacute;digo, permiten la modularidad, es decir, separar la l&oacute;gica de la decoraci&oacute;n de la l&oacute;gica de la funci&oacute;n y, adem&aacute;s, ayudan a que el c&oacute;digo sea m&aacute;s legible y f&aacute;cil de entender.</span></p>
-        <p><span style="font-size: 16px;"><strong>Ejemplo:</strong></span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>def propiedad(func):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def wrapper(self, *args):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; return func(self, *args)</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; return property(wrapper)</span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Persona:</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'> &nbsp; &nbsp;def __init__(self, nombre):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; self._nombre = nombre &nbsp;# Atributo privado</span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; @propiedad</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def nombre(self):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; return self._nombre</span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; @nombre.setter</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def nombre(self, nuevo_nombre):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; self._nombre = nuevo_nombre</span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>persona = Persona(&quot;Andrea&quot;)</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>print(persona.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp; # Salida: Andrea</span></p>
-        <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>persona.nombre = &quot;Mikel&quot;</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>print(persona.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp; # Salida: Mikel</span></p>
-        <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>En este ejemplo el decorador <strong>propiedad</strong> toma la funci&oacute;n <strong>func</strong> como argumento y devuelve la funci&oacute;n interna <strong>wrapper</strong>, que se utiliza como getter de la propiedad.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Dentro de la clase <strong>Persona</strong> aplicamos este decorador al m&eacute;todo <strong>nombre</strong> utilizando la sintaxis <strong>@propiedad</strong>. Esto crea una propiedad llamada <strong>nombre</strong> que act&uacute;a como getter para el atributo privado <strong>_nombre</strong>.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Luego se utiliza el decorador <strong>@nombre.setter</strong> para definir un m&eacute;todo setter para la propiedad <strong>nombre</strong>. El m&eacute;todo setter nos permite modificar el valor del atributo <strong>_nombre</strong>.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Por &uacute;ltimo se crea una instancia de la clase <strong>Persona</strong> y se accede y modifica el atributo <strong>nombre</strong> utilizando el getter y setter definidos.</span></p>
-        <p>Ser&iacute;a de inter&eacute;s revisar informaci&oacute;n relacionada con el encapsulamiento en la Programaci&oacute;n Orientada a Objetos.</p>
-        <p><br></p>
-        <p><strong>Enlaces de inter&eacute;s:</strong></p>
-        <ul>
-            <li><a data-fr-linked="true" href="https://www.geeksforgeeks.org/decorators-in-python/">geeksforgeeks.org/decorators-in-python/</a></li>
-            <li><a data-fr-linked="true" href="https://www.geeksforgeeks.org/encapsulation-in-python/">geeksforgeeks.org/encapsulation-in-python/</a></li>
-        </ul>
-        <p><br></p>
+            <p><span style='font-family: "Times New Roman", Times, serif; font-size: 22px;'><strong><span style="color: rgb(41, 105, 176);">&iquest;Para qu&eacute; usamos clases en Python?</span></strong></span></p>
+            <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>Las clases en Python son una herramienta para crear objetos que pueden contener atributos y m&eacute;todos, es decir, unas caracter&iacute;sticas y unos comportamientos espec&iacute;ficos. Las clases nos permiten agrupar datos y m&eacute;todos relacionados, facilitando la organizaci&oacute;n y la reutilizaci&oacute;n del c&oacute;digo.&nbsp;</span></p>
+            <p style="text-align: justify;"><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>Para crear una clase usamos la palabra reservada&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'>. La convenciones de nomenclatura de Python conocidas como PEP 8 recomiendan el uso de CamelCase para nombrar clases. Adem&aacute;s, es conveniente elegir nombres que sean descriptivos tanto para las clases como para los atributos.</span></p>
+            <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><strong>Ejemplo:</strong></span></p>
+            <p><span style="font-family: Georgia, serif; font-size: 16px;"><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Invoice:</span></span><br><span style='font-size: 14px; background-color: rgb(209, 213, 216); font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'>&nbsp; &nbsp; def greeting(self):</span><span style='font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'><br></span><span style='font-size: 14px; background-color: rgb(209, 213, 216); font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'>&nbsp; &nbsp; &nbsp; &nbsp; return &apos;Hi there&apos;</span><span style='font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'><br></span><span style='font-size: 14px; background-color: rgb(209, 213, 216); font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'>inv_one = Invoice()</span><span style='font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'><br></span><span style='font-size: 14px; background-color: rgb(209, 213, 216); font-family: "Lucida Console", Monaco, monospace; color: rgb(41, 105, 176);'>print(inv_one.greeting())</span></p>
+            <p><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>En el anterior ejemplo la clase&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><strong>Invoice</strong></span></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;tiene un metodo llamado&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px;'><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">greeting</span></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>&nbsp;</strong>que devuelve el string <strong>Hi there</strong>. El par&aacute;metro&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>self</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;se usa para referirse a la instancia de la clase. Es necesario incluir &apos;self&apos; como primer par&aacute;metro en cada m&eacute;todo de clase.<br>Desp&uacute;es de definir la clase, se crea una instancia de &eacute;sta llamada&nbsp;</span><span style='color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-family: "Times New Roman", Times, serif; font-size: 16px;'><strong>inv_one</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>.&nbsp;<br>Por &uacute;ltimo, se llama al m&eacute;todo&nbsp;</span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'><strong>greeting()</strong></span><span style='font-size: 16px; font-family: "Times New Roman", Times, serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>&nbsp;de la instancia inv_one y se imprime el resultado.</span></p>
+            <p>Sin embargo, el ejemplo anterior es la forma m&aacute;s simple y no ser&iacute;a verdaderamente &uacute;til en cuanto a utilizaci&oacute;n en una aplicaci&oacute;n real. Para comprender las clases es necesario entender a su vez la funci&oacute;n especial __init__(), tambi&eacute;n conocida como dunder init. Esta funci&oacute;n reservada es el constructor y se ejecuta autom&aacute;ticamente cuando la clase se instancia. Lo veremos m&aacute;s adelante.<br><br>Otros subtemas de inter&eacute;s relacionados con las clases son otros m&eacute;todos <a href="https://www.w3schools.com/python/python_iterators.asp">dunder</a>, el encapsulamiento, la <a href="https://www.w3schools.com/python/python_inheritance.asp">herencia</a> o el <a href="https://www.w3schools.com/python/python_polymorphism.asp">polimorfismo</a>.</p>
+            <p><span style="font-size: 16px;"><strong>Ejercicio recomendado</strong><strong>:</strong></span></p>
+            <p><span style="font-size: 16px;">Crea una clase llamada &apos;Animal&apos; que tenga los siguientes atributos:&nbsp;nombre, especie, color. Adem&aacute;s, la clase animal tiene que tener n m&eacute;todo llamado &apos;informaci&oacute;n()&apos; que imprima en la consola la informaci&oacute;n del animal en el siguiente formato:</span><br><span style="font-size: 16px;">Nombre: [nombre del animal]</span><br><span style="font-size: 16px;">Especie: [especie del animal]</span><br><span style="font-size: 16px;">Color: [color del animal]</span><br><span style="font-size: 16px;">Despu&eacute;s, crea al menos dos instancias de la clase &apos;Animal&apos; con diferentes atributos y llama al m&eacute;todo &apos;informaci&oacute;n()&apos;.</span></p>
+            <p><br></p>
+            <p><strong>Enlaces de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/classes.html">docs.python.org/3/tutorial/classes.html</a></li>
+                <li><a href="https://www.w3schools.com/python/python_classes.asp">w3schools.com/python/python_classes.asp</a></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><strong><span style="font-size: 20px;"><br></span><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; m&eacute;todo se ejecuta autom&aacute;ticamente cuando se crea una instancia de una clase?</span></strong></p>
+            <p>El m&eacute;todo que se ejecuta autom&aacute;ticamente cuando se crea una instancia de una clase se llama <span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>__init__</span>. Este m&eacute;todo se encarga de inicializar los atributos de la instancia.&nbsp;</p>
+            <p><strong>Ejemplo:</strong></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Persona:<br>&nbsp; &nbsp; def __init__(self, nombre, apellido):<br>&nbsp; &nbsp; &nbsp; &nbsp; self.nombre = nombre<br>&nbsp; &nbsp; &nbsp; &nbsp; self.apellido = apellido<br><br>persona1 = Persona(&apos;Andrea&apos;, &apos;Fern&aacute;ndez&apos;)<br><br>print(persona1.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(255, 255, 255);'>&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(209, 213, 216);'># Salida : Andrea</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'><br>print(persona1.apellido)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(255, 255, 255);'>&nbsp;</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(209, 213, 216); background-color: rgb(255, 255, 255);'># Salida: Fern&aacute;ndez</span></p>
+            <p>En la primera l&iacute;nea se define la clase <strong>Persona</strong>.&nbsp;</p>
+            <p>Despu&eacute;s se define el constructor a trav&eacute;s del m&eacute;todo<strong>&nbsp;__init__.</strong> Este m&eacute;todo se va a ejecutar autom&aacute;ticamente cada vez que se cree una nueva instancia de la clase <strong>Persona</strong>. Toma tres par&aacute;metros:</p>
+            <ul>
+                <li><strong>self</strong>: es necesario en todos los m&eacute;todos de clase Python y hace referencia a la instancia de la clase.</li>
+                <li><strong>nombre</strong> y <strong>apellido</strong>: son los atributos que se inicializar&aacute;n para cada instancia de la clase.</li>
+            </ul>
+            <p>En la siguiente l&iacute;nea se crea una nueva instancia de la clase <strong>Persona</strong> llamada <strong>persona1</strong>. As&iacute; es como se llama autom&aacute;ticamente al m&eacute;todo <strong>__init__&nbsp;</strong>para inicializar los atributos <strong>nombre</strong> y <strong>apellido</strong> con los valores proporcionados <em>Andrea</em> y <em>Fern&aacute;ndez.&nbsp;</em><br>Despu&eacute;s se imprimen los valores de los atributos.<br><br><strong><span style="font-size: 16px;">Ejercicio recomendado</span></strong>:<br><br>Crea una clase llamada <strong>Animal</strong> que tenga dos atributos: <strong>nombre</strong> y <strong>especie</strong>. La clase debe tener un m&eacute;todo especial <strong>__init__&nbsp;</strong>que reciba como par&aacute;metros nombre y especie para inicializar los atributos de cada instancia. Luego, crea una instancia de la clase Animal con el nombre <em>Firulais</em> y la especie <em>Gato</em>. Imprime el nombre y la especie del animal creado.</p>
+            <p><br></p>
+            <p><strong>Enlace de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a href="https://www.w3schools.com/python/gloss_python_class_init.asp">w3schools.com/python/gloss_python_class_init.asp</a></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><br><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Cu&aacute;les son los tres verbos de API?</span></strong></p>
+            <p>Los verbos de API son instrucciones estandarizadas que indican la acci&oacute;n que una aplicaci&oacute;n quiere realizar sobre un recurso en otra aplicaci&oacute;n. Estos verbos se utilizan en APIs Rest, que son el tipo de API m&aacute;s com&uacute;n en la actualidad.</p>
+            <p>Los tres verbos principales de API son:</p>
+            <ul>
+                <li>GET: Obtener datos de un servidor.</li>
+                <li>POST: Enviar datos nuevos al servidor.</li>
+                <li>PUT / PATCH: Para actualizar los datos existentes en el servidor.&nbsp;</li>
+            </ul>
+            <p>Adem&aacute;s de estos verbos b&aacute;sicos, tambi&eacute;n se pueden usar otros verbos adicionales para acciones espec&iacute;ficas, como:</p>
+            <ul>
+                <li>DELETE: Se utiliza para eliminar datos.</li>
+                <li>HEAD: Para obtener solamente los encabezados en un servidor, sin el cuerpo completo.&nbsp;</li>
+            </ul>
+            <p>Hay que ser especialmente precavido al utilizar verbos como PUT o DELETE, ya que pueden modificar o eliminar datos de forma permanente.&nbsp;</p>
+            <p><br></p>
+            <p><strong>Enlace de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a href="https://www.restapitutorial.com/lessons/httpmethods.html">restapitutorial.com/lessons/httpmethods.html</a></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><span style="font-size: 22px;"><strong><span style="color: rgb(41, 105, 176);">&iquest;Es MongoDB una base de datos SQL o NoSQL?</span></strong></span><br><br><span style="font-size: 16px;">MongoDB es una base de datos NoSQL clasificada de tipo Documental, ya que sus datos se almacenan en documentos JSON.</span></p>
+            <p><span style="font-size: 16px;">Las caracter&iacute;sticas principales de las bases de datos NoSQL son:</span></p>
+            <ul>
+                <li>No relacionales: No se basan en tablas y relaciones.</li>
+                <li>No estructuradas: Los datos pueden tener diferentes formatos.</li>
+                <li>Consultas espec&iacute;ficas: Cada tipo de base de datos NoSQL tiene su propio lenguaje de consulta.</li>
+            </ul>
+            <p>Las ventajas de utilizar MongoDB son las siguientes:</p>
+            <ul>
+                <li>Flexibilidad: Almacena datos en documentos JSON, que son flexibles y f&aacute;ciles de modificar.</li>
+                <li>Escalabilidad: Puede escalar horizontalmente para manejar grandes cantidades de datos.</li>
+                <li>Rendimiento: Es una base de datos r&aacute;pida y eficiente.</li>
+            </ul>
+            <p><br></p>
+            <p><strong>Enlaces de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a href="https://www.mongodb.com/nosql-explained/nosql-vs-sql">mongodb.com/nosql-explained/nosql-vs-sql</a></li>
+                <li><a href="https://www.mongodb.com/es/what-is-mongodb">mongodb.com/es/what-is-mongodb</a></li>
+            </ul>
+            <p><br></p>
+            <p><br></p>
+            <hr>
+            <p><br></p>
+            <p><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; es una API?</span></strong><br><br><span style="font-size: 16px;">API significa Interfaz de Programaci&oacute;n de APlicaciones (en ingl&eacute;s, Application Programming Interface). Es un conjunto de reglas y definiciones que permiten que dos aplicaciones se comuniquen entre s&iacute;.</span></p>
+            <p><span style="font-size: 16px;">Las APIs se utilizan para:</span></p>
+            <ul>
+                <li><span style="font-size: 16px;">Obtener datos: Por ejemplo, una aplicaci&oacute;n de noticias podr&iacute;a usar una API para obtener datos sobre los &uacute;ltimos art&iacute;culos.</span></li>
+                <li><span style="font-size: 16px;">Enviar datos: Una app como Instagram utilizar&iacute;a una API para enviar las publicaciones de los usuarios.</span></li>
+                <li><span style="font-size: 16px;">Controlar dispositivos: Una aplicaci&oacute;n de dom&oacute;tica podr&iacute;a usar una API para subir o bajar las persianas.</span></li>
+            </ul>
+            <p><span style="font-size: 16px;">Tipos de APIs:</span></p>
+            <ul>
+                <li><span style="font-size: 16px;">API REST: Es el tipo de API m&aacute;s com&uacute;n. Se basa en el uso de verbos HTTP (GET, POST, PUT, DELETE) para realizar las acciones sobre los recursos.</span></li>
+                <li><span style="font-size: 16px;">API SOAP: Es la m&aacute;s antigua, utilizando XML para definir los mensajes que se intercambian las aplicaciones.</span></li>
+                <li><span style="font-size: 16px;">API GraphQL: Es la m&aacute;s reciente, permite que los clientes soliciten datos de forma espec&iacute;fica y flexible.</span></li>
+            </ul>
+            <p>Las APIs se utilizan en una gran variedad de aplicaciones, como aplicaciones web, aplicaciones m&oacute;viles, juegos y software empresarial.&nbsp;</p>
+            <p>Algunos ejemplos de APIs son:</p>
+            <ul>
+                <li>Google Maps API: permite obtener informaci&oacute;n sobre mapas, direcciones y lugares.</li>
+                <li>Twitter API: permite obtener informaci&oacute;n sobre tweets, usuarios y hastags.</li>
+                <li>Facebook API: permite obtener informaci&oacute;n sobre usuarios, publicaciones y eventos.</li>
+            </ul>
+            <p>Otros temas de inter&eacute;s en relaci&oacute;n con las API son la arquitectura de software, la integraci&oacute;n de aplicaciones y el dise&ntilde;o de APIs.</p>
+            <p><strong>Ejercicio sugerido:</strong></p>
+            <p>Elige una de las tres APIs mencionadas arriba (Facebook, Twitter, Google Maps) y revisa su documentaci&oacute;n. Despu&eacute;s trata de escribir un script que use la API para obtener informaci&oacute;n o realizar alguna acci&oacute;n.</p>
+            <p><br></p>
+            <p><span style="font-size: 16px;"><strong>Enlaces de inter&eacute;s:</strong></span></p>
+            <ul>
+                <li><a href="https://www.w3schools.com/js/js_api_intro.asp">w3schools.com/js/js_api_intro.asp</a></li>
+                <li><span style="font-size: 16px;"><a href="https://docs.github.com/es/rest?apiVersion=2022-11-28">docs.github.com/es/rest?apiVersion=2022-11-28</a></span></li>
+                <li><span style="font-size: 16px;"><a href="https://www.restapitutorial.com/lessons/httpmethods.html">restapitutorial.com/lessons/httpmethods.html</a></span></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; es Postman?</span></strong></p>
+            <p><span style="font-size: 16px;">Postman es una herramienta de colaboraci&oacute;n para el desarrollo de APIs. Postman proporciona una interfaz gr&aacute;fica de usuario que permite lo siguiente:</span></p>
+            <ul>
+                <li><span style="font-size: 16px;">Enviar solicitudes a APIs: se puede probar diferentes verbos HTTP, encabezados y cuerpos de solicitud.</span></li>
+                <li><span style="font-size: 16px;">Recibir y analizar respuestas de la API: se puede ver el c&oacute;digo de estado, los encabezados y el cuerpo de la respuesta.</span></li>
+                <li><span style="font-size: 16px;">Documentar APIs: se pueden crear y compartir colecciones de solicitudes y respuestas.</span></li>
+                <li><span style="font-size: 16px;">Colaborar en equipo: puedes trabajar con otros en las mismas colecciones de API.</span></li>
+            </ul>
+            <p><span style="font-size: 16px;">Postman es ampliamente utilizado en el desarrollo de software para probar y depurar APIs antes de integrarlas en aplicaciones m&aacute;s grandes. Por lo tanto, es una herramienta &uacute;til para desarrolladores.&nbsp;</span></p>
+            <p><strong><br>Ejercicio sugerido:</strong></p>
+            <p>Utiliza Postman para realizar solicitudes HTTP como GET, PUT, POST, DELETE a un servidor y observar las respuestas recibidas.</p>
+            <p><br></p>
+            <p><strong>Enlaces de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a href="https://www.postman.com/">postman.com</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">Video-tutorial Postman</a></li>
+                <li><a href="https://learning.postman.com/docs/">learning.postman.com/docs</a></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><br></p>
+            <p><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; es el polimorfismo?</span></strong></p>
+            <p>El polimorfismo es un concepto de la programaci&oacute;n orientada a objetos que permite que diferentes objetos respondan al mismo mensaje de diferentes maneras. Dicho de otra manera, dos objetos de diferentes clases pueden tener m&eacute;todos con el mismo nombre, y los dos pueden ser llamados con el mismo c&oacute;digo, dando respuestas diferentes.</p>
+            <p>En Python el polimorfismo se puede lograr de dos formas:</p>
+            <ul>
+                <li>Polimorfismo de inclusi&oacute;n: basado en la herencia.</li>
+                <li>Polimorfismo de sobrecarga: basado en la definici&oacute;n de diferentes m&eacute;todos con el mismo nombre pero con diferentes par&aacute;metros.</li>
+            </ul>
+            <p>Los beneficios de utilizar el polimorfismo son:</p>
+            <ul>
+                <li>Flexibilidad: permite escribir c&oacute;digo m&aacute;s flexible y reutilizable.</li>
+                <li>Extensibilidad: facilita la creaci&oacute;n de nuevas clases que heredan de clases existentes.</li>
+                <li>Mantenimiento: hace que el c&oacute;digo sea m&aacute;s f&aacute;cil de mantener y actualizar.</li>
+            </ul>
+            <p><strong>Ejemplo:</strong></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Animal:<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; raise NotImplementedError<br><br>class Perro(Animal):<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return &apos;Guau!&apos;<br><br>class Gato(Animal):<br>&nbsp; &nbsp; def hablar(self):<br>&nbsp; &nbsp; &nbsp; &nbsp; return &apos;Miau!&apos;<br><br>perro = Perro()<br>gato = Gato()<br><br>print(perro.hablar())</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp;# Salida: Guau!</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'><br>print(gato.hablar())</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp;# Salida: Miau!</span></p>
+            <p>En este ejemplo el polimorfismo se representa mediante la capacidad de los objetos de las clases <strong>Perro</strong> y&nbsp;<strong>Gato</strong> de comportarse de manera similar aunque sean de diferentes tipos, permitiendo escribir c&oacute;digo gen&eacute;rico.<br>La clase <strong>Animal</strong> define un m&eacute;todo <strong>hablar()&nbsp;</strong>que levanta la excepci&oacute;n <strong>NotImplementedError</strong>,<strong>&nbsp;</strong>sirviendo de interfaz gen&eacute;rica que especifica que cualquier subclase debe implementar su propio m&eacute;todo&nbsp;<strong>hablar()</strong>. As&iacute; pues, las clases Perro y Gato sobreescriben el m&eacute;todo hablar con sus propias implementaciones.<br>Al crear una instancia de Perro y Gato y se llama al m&eacute;todo hablar() en cada una de ellas, el resultado es diferente para cada objeto, pero el c&oacute;digo que realizada la llamada es el mismo. Esto demuestra que los objetos de diferentes tipos pueden ser tratados de manera uniforme a trav&eacute;s de la herencia y el polimorfismo en Python.</p>
+            <p>Ser&iacute;a interesante buscar informaci&oacute;n sobre temas relacionados como la herencia y las clases abstractas.</p>
+            <p><strong>Ejercicio sugerido:</strong><br><br>Crea una funci&oacute;n &apos;&aacute;rea&apos; que pueda calcular el &aacute;rea de diferentes formas geom&eacute;tricas como cuadrado y c&iacute;rculo, utilizando el polimorfismo.</p>
+            <p><br></p>
+            <p>Enlaces de inter&eacute;s:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/python/python_polymorphism.asp">w3schools.com/python/python_polymorphism.asp</a></li>
+                <li><a href="https://www.w3schools.com/python/python_inheritance.asp">w3schools.com/python/python_inheritance.asp</a></li>
+                <li><a href="https://www.geeksforgeeks.org/abstract-classes-in-python/">geeksforgeeks.org/abstract-classes-in-python</a></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; es un m&eacute;todo dunder?</span></strong></p>
+            <p><span style="font-size: 16px;">Un m&eacute;todo dunder (double underscore), tambi&eacute;n conocido como m&eacute;todo m&aacute;gico o especial, son m&eacute;todos predefinidos que comienzan y terminan con dos guiones bajos (_ _). Estos m&eacute;todos se utilizan para implementar funcionalidades especiales en las clases.</span></p>
+            <p><span style="font-size: 16px;">Algunos ejemplos de m&eacute;todos dunder:</span></p>
+            <ul>
+                <li><span style="font-size: 16px;"><strong>__init__</strong>: se llama al crear una nueva instancia de una clase. Tambi&eacute;n conocido como m&eacute;todo constructor.</span></li>
+                <li><span style="font-size: 16px;"><strong>__str__</strong>: se utiliza para definir c&oacute;mo se debe representar la instancia de la clase como una cadena de caracteres (string). Sobre todo se utiliza para debugging.</span></li>
+                <li><span style="font-size: 16px;"><strong>__repr__</strong>: es miuy similar al anterior, pero se usa para definir una representaci&oacute;n sin ambig&uuml;edades, siendo &uacute;til al inspeccionar objetos para los desarrolladores.</span></li>
+                <li><span style="font-size: 16px;"><strong>__iter__</strong>: se llama para obtener un iterador de un objeto. Un iterador es un objeto que permite recorrer una secuencia de valores uno por uno.</span></li>
+                <li><span style="font-size: 16px;"><strong>__next__</strong>: se llama en un interador para obtener el siguiente valor de la secuencia. Al llegar al final de la secuencia se lanza la excepci&oacute;n StopIteration.</span></li>
+                <li><span style="font-size: 16px;"><strong>__len__</strong>: se llama para obtener la longitud de una secuencia.</span></li>
+                <li><span style="font-size: 16px;"><strong>__add__</strong>: se llama para sumar dos objetos.</span></li>
+            </ul>
+            <p><span style="font-size: 16px;"><strong>Ejemplo:</strong></span></p>
+            <p><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>class&nbsp;MiClase:</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__init__(self, lista):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; self.lista = lista</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__iter__(self):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; return iter(self.lista)</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp;&nbsp;</span><span style="text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px;"><span style='font-family: "Lucida Console", Monaco, monospace;'>def&nbsp;__next__(self):</span></span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; if not self.lista:</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise StopIteration</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp; &nbsp; &nbsp; &nbsp; return self.lista.pop(0)</span><br><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>obj = MiClase([1, 2, 3])</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>for i in obj: &nbsp; &nbsp;</span><br><span style='text-align: start; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>print(i)</span><span style='text-align: start; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255); font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>&nbsp;# Salida: 1, 2, 3</span></p>
+            <p>En este c&oacute;digo se crea una instancia de <strong>MiClase&nbsp;</strong>con una lista <strong>[1, 2, 3]</strong>. Despu&eacute;s se itera sobre esta instancia utilizando un bucle <strong>for</strong>. En cada iteraci&oacute;n se llama al m&eacute;todo <strong>__next__</strong> de <strong>MiClase</strong> para obtener el siguiente elemento del iterador, que es uno de los elementos de la lista. El resultado es que se imprime cada elemento de la lista en orden y uno por uno.</p>
+            <p><br></p>
+            <p><span style="font-size: 16px;"><strong>Enlace de inter&eacute;s:</strong></span></p>
+            <ul>
+                <li><span style="font-size: 16px;"><a data-fr-linked="true" href="https://www.geeksforgeeks.org/dunder-magic-methods-python/">geeksforgeeks.org/dunder-magic-methods-python/</a><br></span></li>
+            </ul>
+            <hr>
+            <p><br></p>
+            <p><strong><span style="font-size: 22px; color: rgb(41, 105, 176);">&iquest;Qu&eacute; es un decorador de Python?</span></strong></p>
+            <p><span style="font-size: 16px;">Un decorador de Python es una funci&oacute;n que recibe otra funci&oacute;n como par&aacute;metro y devuelve otra funci&oacute;n. Se utilizan para modificar el comportamiento de una funci&oacute;n sin tener que modificarla directamente.</span><br><br><span style="font-size: 16px;">Los decoradores son &uacute;tiles para reutilizar c&oacute;digo, permiten la modularidad, es decir, separar la l&oacute;gica de la decoraci&oacute;n de la l&oacute;gica de la funci&oacute;n y, adem&aacute;s, ayudan a que el c&oacute;digo sea m&aacute;s legible y f&aacute;cil de entender.</span></p>
+            <p><span style="font-size: 16px;"><strong>Ejemplo:</strong></span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>def propiedad(func):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def wrapper(self, *args):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; return func(self, *args)</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; return property(wrapper)</span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>class Persona:</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp;&nbsp; &nbsp;def __init__(self, nombre):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; self._nombre = nombre &nbsp;# Atributo privado</span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; @propiedad</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def nombre(self):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; return self._nombre</span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; @nombre.setter</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; def nombre(self, nuevo_nombre):</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>&nbsp; &nbsp; &nbsp; &nbsp; self._nombre = nuevo_nombre</span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>persona = Persona(&quot;Andrea&quot;)</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>print(persona.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp; # Salida: Andrea</span></p>
+            <p><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>persona.nombre = &quot;Mikel&quot;</span><br><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(41, 105, 176); background-color: rgb(209, 213, 216);'>print(persona.nombre)</span><span style='font-family: "Lucida Console", Monaco, monospace; font-size: 14px; color: rgb(40, 50, 78); background-color: rgb(255, 255, 255);'>&nbsp; # Salida: Mikel</span></p>
+            <p><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>En este ejemplo el decorador <strong>propiedad</strong> toma la funci&oacute;n <strong>func</strong> como argumento y devuelve la funci&oacute;n interna <strong>wrapper</strong>, que se utiliza como getter de la propiedad.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Dentro de la clase <strong>Persona</strong> aplicamos este decorador al m&eacute;todo <strong>nombre</strong> utilizando la sintaxis <strong>@propiedad</strong>. Esto crea una propiedad llamada <strong>nombre</strong> que act&uacute;a como getter para el atributo privado <strong>_nombre</strong>.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Luego se utiliza el decorador <strong>@nombre.setter</strong> para definir un m&eacute;todo setter para la propiedad <strong>nombre</strong>. El m&eacute;todo setter nos permite modificar el valor del atributo <strong>_nombre</strong>.</span><span style="color: rgb(0, 0, 0);"><br></span><span style='font-family: "Times New Roman", Times, serif; font-size: 16px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);'>Por &uacute;ltimo se crea una instancia de la clase <strong>Persona</strong> y se accede y modifica el atributo <strong>nombre</strong> utilizando el getter y setter definidos.</span></p>
+            <p>Ser&iacute;a de inter&eacute;s revisar informaci&oacute;n relacionada con el encapsulamiento en la Programaci&oacute;n Orientada a Objetos.</p>
+            <p><br></p>
+            <p><strong>Enlaces de inter&eacute;s:</strong></p>
+            <ul>
+                <li><a data-fr-linked="true" href="https://www.geeksforgeeks.org/decorators-in-python/">geeksforgeeks.org/decorators-in-python/</a></li>
+                <li><a data-fr-linked="true" href="https://www.geeksforgeeks.org/encapsulation-in-python/">geeksforgeeks.org/encapsulation-in-python/</a></li>
+            </ul>
+            <p><br></p>
     </body>
 </html>
 
